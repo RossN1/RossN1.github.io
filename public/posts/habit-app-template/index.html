@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Habit App | ross.</title>
+<meta name="keywords" content="">
+<meta name="description" content="Habit App — 3-Year Business Plan (MVP → V2 → AI Differentiation)
+One-liner
+A clean, privacy-first habit tracker that earns trust in Year 1, adds community &#43; gamification in Year 2, then ships defensible AI differentiation in Year 3.
+Vision &amp; Value Proposition
+
+Most apps help you log; we help you stay consistent—first through simple clarity and community, then (Year 3) through evidence-based AI that reduces abandonment.
+Privacy-first. Works great with only in-app data; optional integrations later.
+
+
+Target Users
+
+Year 1 (MVP): individuals wanting lightweight tracking &#43; clear insights (no overwhelm).
+Year 2 (V2): same users plus those motivated by community, challenges, and friendly competition.
+Year 3 (AI): users who value predictive, explainable, science-backed help to keep habits alive.
+
+
+Product Strategy &amp; Scope
+Year 1 — MVP (EOY target: 1,000–5,000 users)
+Ships">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/habit-app-template/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b489a6d73b9d5f542e10296b5fbfe24c07a73618c7ca7efba908fadedc6200f9.css" integrity="sha256-tImm1zudX1QuEClrX7/iTAenNhjHyn77qQj63txiAPk=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/habit-app-template/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="ross. (Alt + H)">ross.</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts/" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Habit App
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2025-09-24 10:00:00 +0100 BST'>September 24, 2025</span>&nbsp;·&nbsp;6 min
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="habit-app--3-year-business-plan-mvp--v2--ai-differentiation">Habit App — 3-Year Business Plan (MVP → V2 → AI Differentiation)<a hidden class="anchor" aria-hidden="true" href="#habit-app--3-year-business-plan-mvp--v2--ai-differentiation">#</a></h1>
+<h2 id="one-liner">One-liner<a hidden class="anchor" aria-hidden="true" href="#one-liner">#</a></h2>
+<p>A clean, privacy-first habit tracker that <strong>earns trust in Year 1</strong>, adds <strong>community + gamification in Year 2</strong>, then ships <strong>defensible AI differentiation in Year 3</strong>.</p>
+<h2 id="vision--value-proposition">Vision &amp; Value Proposition<a hidden class="anchor" aria-hidden="true" href="#vision--value-proposition">#</a></h2>
+<ul>
+<li>Most apps help you <strong>log</strong>; we help you <strong>stay consistent</strong>—first through simple clarity and community, then (Year 3) through <strong>evidence-based AI</strong> that reduces abandonment.</li>
+<li>Privacy-first. Works great with only in-app data; optional integrations later.</li>
+</ul>
+<hr>
+<h2 id="target-users">Target Users<a hidden class="anchor" aria-hidden="true" href="#target-users">#</a></h2>
+<ul>
+<li><strong>Year 1 (MVP):</strong> individuals wanting lightweight tracking + clear insights (no overwhelm).</li>
+<li><strong>Year 2 (V2):</strong> same users plus those motivated by <strong>community, challenges, and friendly competition</strong>.</li>
+<li><strong>Year 3 (AI):</strong> users who value <strong>predictive, explainable, science-backed</strong> help to keep habits alive.</li>
+</ul>
+<hr>
+<h1 id="product-strategy--scope">Product Strategy &amp; Scope<a hidden class="anchor" aria-hidden="true" href="#product-strategy--scope">#</a></h1>
+<h2 id="year-1--mvp-eoy-target-10005000-users">Year 1 — MVP (EOY target: <strong>1,000–5,000 users</strong>)<a hidden class="anchor" aria-hidden="true" href="#year-1--mvp-eoy-target-10005000-users">#</a></h2>
+<p><strong>Ships</strong></p>
+<ul>
+<li>Habit CRUD, daily/weekly scheduling, reminders, streaks.</li>
+<li>Basic analytics: completion %, weekly trend, best/worst day.</li>
+<li><strong>Basic AI insights (no heavy ML):</strong> heuristics on timing windows, “you do better when…”, nudge suggestions.</li>
+<li>Privacy-first onboarding; data export/delete; basic offline.</li>
+<li>Weekly summary email (progress + one small tip).</li>
+</ul>
+<p><strong>Doesn’t ship</strong></p>
+<ul>
+<li>Community, advanced gamification, automations, complex ML.</li>
+</ul>
+<p><strong>Primary goals</strong></p>
+<ul>
+<li>Fast activation; low friction; delightful clarity.</li>
+<li>Prove retention before layering features.</li>
+</ul>
+<p><strong>Key KPIs</strong></p>
+<ul>
+<li>D1 ≥ 45%, D7 ≥ 25%, D30 ≥ 15%</li>
+<li>4-week continuation rate ≥ 40%</li>
+<li>Insight card engagement ≥ 40% of actives</li>
+</ul>
+<hr>
+<h2 id="year-2--version-20-eoy-target-500010000-users">Year 2 — Version 2.0 (EOY target: <strong>5,000–10,000 users</strong>)<a hidden class="anchor" aria-hidden="true" href="#year-2--version-20-eoy-target-500010000-users">#</a></h2>
+<p><strong>Ships</strong></p>
+<ul>
+<li><strong>Community (opt-in):</strong> small groups, gentle leaderboards, seasonal challenges.</li>
+<li><strong>Enhanced gamification:</strong> comeback badges (reward recovery, not only streaks), milestones.</li>
+<li>Saved insight cards; improved weekly report; CSV export.</li>
+<li>Optional <strong>read-only calendar</strong> view for planning (no writes yet).</li>
+<li>Referrals baked into challenge join flow.</li>
+</ul>
+<p><strong>Primary goals</strong></p>
+<ul>
+<li>Lift D30/D90 retention via community loops; increase sharing.</li>
+</ul>
+<p><strong>Key KPIs</strong></p>
+<ul>
+<li>D30 ≥ 18–22%, D90 ≥ 10–12%</li>
+<li>≥25% of actives join a challenge</li>
+<li>≥0.10 invites per user</li>
+<li>Weekly report open rate ≥ 35%</li>
+</ul>
+<hr>
+<h2 id="year-3--ai-differentiation-defensible-moat">Year 3 — AI Differentiation (defensible moat)<a hidden class="anchor" aria-hidden="true" href="#year-3--ai-differentiation-defensible-moat">#</a></h2>
+<p><strong>Ships</strong></p>
+<ul>
+<li><strong>Early-warning scoring</strong> (explainable): daily habit risk indicators with clear “why now.”</li>
+<li><strong>Recovery playbooks:</strong> one-tap, 7-day step-down or timing swap plans.</li>
+<li><strong>Contrastive insights:</strong> your success vs. fail periods; counterfactuals (“before 9am → +X%”).</li>
+<li><strong>Survival analysis:</strong> time-to-abandon curves; change-point detection (routine shifts).</li>
+<li>(Optional late-Year 3) <strong>Risk-triggered suggestions</strong> (apply with 1 tap; full automations are optional and clearly controlled).</li>
+<li><strong>Ecosystem lite:</strong> keystone habit identification; simple influence hints.</li>
+</ul>
+<p><strong>Primary goals</strong></p>
+<ul>
+<li>Demonstrate <strong>measurable uplift</strong> in persistence (A/B proven).</li>
+<li>Publish a short, plain-English effectiveness brief.</li>
+</ul>
+<p><strong>Key KPIs</strong></p>
+<ul>
+<li>Abandonment hazard ↓ vs. Year-2 baseline (target 15–30%)</li>
+<li>Time-to-comeback ↓ (target 25–40%)</li>
+<li>Premium conversion with AI live ≥ 3–5%</li>
+</ul>
+<hr>
+<h1 id="monetization">Monetization<a hidden class="anchor" aria-hidden="true" href="#monetization">#</a></h1>
+<p><strong>Pricing</strong></p>
+<ul>
+<li>
+<p><strong>Free:</strong> full tracking, basic analytics, basic insights, weekly report, community join.</p>
+</li>
+<li>
+<p><strong>Premium:</strong> <strong>£2.99/mo</strong> or <strong>£19.99/yr</strong></p>
+<ul>
+<li>Year 1: historical breakdowns, custom insight report.</li>
+<li>Year 2: create/host challenges, advanced badges, CSV/exports.</li>
+<li>Year 3: AI early-warning, recovery playbooks, contrastive insights.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Notes</strong></p>
+<ul>
+<li>Keep Year-1 paywall light (optimize for retention and word-of-mouth).</li>
+<li>Optional “Founding Annual” in Y1 (£14.99–£17.99) to test willingness to pay.</li>
+</ul>
+<hr>
+<h1 id="conservative-revenue-projections-aligned-to-your-user-targets">Conservative Revenue Projections (aligned to your user targets)<a hidden class="anchor" aria-hidden="true" href="#conservative-revenue-projections-aligned-to-your-user-targets">#</a></h1>
+<p><em>Assumptions you can audit:</em>
+Store fees on subs/MTX ~15%. Ads aren’t store-taxed.</p>
+<ul>
+<li>
+<p><strong>Y1 (1k–5k users)</strong></p>
+<ul>
+<li>Premium conversion <strong>1–3%</strong>; avg paid months <strong>3.5–5</strong>; annual share <strong>20–40%</strong> of payers</li>
+<li>Light ads ARPU <strong>£0.05–£0.15</strong>; <strong>no MTX</strong></li>
+<li><strong>Gross:</strong> <strong>£0.17k → £3.29k</strong></li>
+<li><strong>After fees:</strong> <strong>~£0.16k → £2.91k</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Y2 (5k–10k users)</strong></p>
+<ul>
+<li>Premium conversion <strong>1.5–5%</strong>; months <strong>5–7</strong>; annual share <strong>30–50%</strong></li>
+<li>Ads ARPU <strong>£0.15–£0.40</strong>; MTX attach <strong>1–2%</strong> @ ~£1.49</li>
+<li><strong>Gross:</strong> <strong>£2.06k → £14.53k</strong></li>
+<li><strong>After fees:</strong> <strong>~£1.86k → £12.95k</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>Y3 (example ranges)</strong>
+<em>If you end Y3 with <strong>10k–20k</strong> users; conversion <strong>3–6%</strong> (AI live), months <strong>6–8</strong>, annual <strong>40–60%</strong>, ads <strong>£0.10–£0.35</strong>, MTX <strong>2–4%</strong> @ £1.49–£2.99:</em></p>
+<ul>
+<li><strong>Gross:</strong> <strong>£6.93k → £35.27k</strong></li>
+<li><strong>After fees:</strong> <strong>~£6.04k → £31.03k</strong></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>Translation: With your chosen user targets, revenue remains modest until AI differentiation is live. That’s fine—Years 1–2 are about <strong>stickiness</strong> and <strong>credibility</strong>.</p></blockquote>
+<hr>
+<h1 id="go-to-market-plan">Go-to-Market Plan<a hidden class="anchor" aria-hidden="true" href="#go-to-market-plan">#</a></h1>
+<p><strong>Year 1</strong></p>
+<ul>
+<li>Landing page with three promises: <strong>fast setup</strong>, <strong>clear insights</strong>, <strong>privacy</strong>.</li>
+<li>“First win” onboarding: create 1–2 habits, define micro-version, deliver first insight within 48 hours.</li>
+<li>30-second demo: <em>before/after</em> week chart; no AI theatrics.</li>
+<li>Small beta cohorts; iterate for D30.</li>
+</ul>
+<p><strong>Year 2</strong></p>
+<ul>
+<li>Seasonal challenges (Jan/Apr/Sep); micro-communities (10–50 people).</li>
+<li>Referral hooks inside challenge joins; shareable weekly report cards.</li>
+<li>Partner with a few creators for themed challenges.</li>
+</ul>
+<p><strong>Year 3</strong></p>
+<ul>
+<li>Case studies with measured uplift; concise AI explainer; press kit.</li>
+</ul>
+<hr>
+<h1 id="success-metrics-what-youll-optimize">Success Metrics (what you’ll optimize)<a hidden class="anchor" aria-hidden="true" href="#success-metrics-what-youll-optimize">#</a></h1>
+<ul>
+<li><strong>Activation:</strong> complete onboarding in ≤3 minutes; first check-in within 24h.</li>
+<li><strong>Retention:</strong> D30 and D90 (as above).</li>
+<li><strong>Consistency:</strong> 4-week continuation; comeback time after a miss.</li>
+<li><strong>Engagement:</strong> insight card opens; challenge participation; referral rate.</li>
+<li><strong>AI impact (Y3):</strong> hazard reduction, comeback time reduction, A/B uplift (p&lt;.05).</li>
+</ul>
+<hr>
+<h1 id="product--ux-architecture">Product &amp; UX Architecture<a hidden class="anchor" aria-hidden="true" href="#product--ux-architecture">#</a></h1>
+<p><strong>Core (Y1)</strong></p>
+<ul>
+<li><strong>Home:</strong> today’s habits, streak, simple progress chip, “best time” hint.</li>
+<li><strong>Create/Edit Habit:</strong> frequency, reminders, micro-version, notes.</li>
+<li><strong>Analytics:</strong> completion %, trends, day-of-week heatmap (simple).</li>
+<li><strong>Insights:</strong> “You’re 2× better before 9am,” “Tues/Thu strong,” etc.</li>
+<li><strong>Weekly Report:</strong> wins, weak spots, one suggestion.</li>
+<li><strong>Settings/Privacy:</strong> export/delete data; notification preferences.</li>
+</ul>
+<p><strong>V2 (Y2)</strong></p>
+<ul>
+<li><strong>Community:</strong> join/host challenge, rules, leaderboard (gentle), invite link.</li>
+<li><strong>Badges:</strong> comeback badges, streak milestones, personal bests.</li>
+<li><strong>Saved Insights:</strong> bookmark and re-surface helpful ones.</li>
+<li><strong>Calendar View (read-only):</strong> see planned vs. busy windows.</li>
+</ul>
+<p><strong>AI (Y3)</strong></p>
+<ul>
+<li><strong>Risk Timeline:</strong> early-warning score with human-readable reasons.</li>
+<li><strong>Recovery Playbooks:</strong> one-tap 7-day plan; progress/feedback loop.</li>
+<li><strong>Contrastive Screen:</strong> success vs. fail period drivers; counterfactuals.</li>
+<li><strong>Survival Curves:</strong> habit longevity view; change-point alerts.</li>
+<li><strong>Ecosystem Lite:</strong> keystone habit flag; simple influence notes.</li>
+</ul>
+<hr>
+<h1 id="technology--data">Technology &amp; Data<a hidden class="anchor" aria-hidden="true" href="#technology--data">#</a></h1>
+<p><strong>Stack</strong></p>
+<ul>
+<li><strong>Frontend:</strong> React Native + React Native Paper.</li>
+<li><strong>Backend:</strong> Node.js/Express; Postgres (pgvector ready for Y3); simple queue for jobs.</li>
+<li><strong>Analytics:</strong> event pipeline (Segment/OSS), daily jobs for insights.</li>
+<li><strong>ML (Y3):</strong> Python (scikit-learn → PyTorch later).</li>
+</ul>
+<p><strong>Data &amp; Privacy</strong></p>
+<ul>
+<li>Start minimal: check-ins, timestamps, reminder opens.</li>
+<li>Optional, explicit context tags (energy/mood) only if user opts in.</li>
+<li>Export/delete self-service; logs for transparency.</li>
+<li>On-device heuristics where feasible; server-side model opt-in in Y3.</li>
+</ul>
+<hr>
+<h1 id="roadmap--milestones">Roadmap &amp; Milestones<a hidden class="anchor" aria-hidden="true" href="#roadmap--milestones">#</a></h1>
+<p><strong>Months 0–3 (Y1 MVP)</strong></p>
+<ul>
+<li>Build core tracking, reminders, basic analytics, heuristic insights, weekly report.</li>
+<li>Beta (100–300 users) → iterate to D30 ≥ 15%.</li>
+<li>Release to store; light content/blog; small creator pilots.</li>
+</ul>
+<p><strong>Months 4–12 (Y1 refinement)</strong></p>
+<ul>
+<li>Polish activation/retention; performance &amp; reliability; accessibility.</li>
+</ul>
+<p><strong>Months 13–20 (Y2 V2)</strong></p>
+<ul>
+<li>Community, challenges, badges; saved insights; referrals; calendar view.</li>
+<li>Improve weekly reports; CSV export.</li>
+<li>Goal: D30 ≥ 18–22%, D90 ≥ 10–12%.</li>
+</ul>
+<p><strong>Months 21–36 (Y3 AI)</strong></p>
+<ul>
+<li>Early-warning (explainable), recovery playbooks, contrastive insights, survival curves.</li>
+<li>A/B tests; publish results brief; optional risk-triggered suggestions.</li>
+<li>Goal: measurable hazard reduction and comeback time improvements.</li>
+</ul>
+<hr>
+<h1 id="risks--mitigations">Risks &amp; Mitigations<a hidden class="anchor" aria-hidden="true" href="#risks--mitigations">#</a></h1>
+<table>
+  <thead>
+      <tr>
+          <th>Risk</th>
+          <th>Mitigation</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Over-complexity</td>
+          <td>Keep Y1 minimal; add only features that lift D30/D90.</td>
+      </tr>
+      <tr>
+          <td>Weak early retention</td>
+          <td>Ship “first insight in 48h”; micro-versions; great reminders UX.</td>
+      </tr>
+      <tr>
+          <td>Community fatigue</td>
+          <td>Keep groups small, seasonal; celebrate recovery, not grind.</td>
+      </tr>
+      <tr>
+          <td>Privacy concerns</td>
+          <td>Clear privacy page; on-device where possible; easy export/delete.</td>
+      </tr>
+      <tr>
+          <td>AI opacity (Y3)</td>
+          <td>Explainable reasons on every risk/rec; publish plain-English brief.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="team--ops-lean">Team &amp; Ops (lean)<a hidden class="anchor" aria-hidden="true" href="#team--ops-lean">#</a></h1>
+<h2 id="just-me">Just me<a hidden class="anchor" aria-hidden="true" href="#just-me">#</a></h2>
+<h2 id="tldr">TL;DR<a hidden class="anchor" aria-hidden="true" href="#tldr">#</a></h2>
+<ul>
+<li><strong>Year 1:</strong> ship a crisp MVP and <strong>prove retention</strong>.</li>
+<li><strong>Year 2:</strong> add <strong>community &amp; gamification</strong> to deepen engagement.</li>
+<li><strong>Year 3:</strong> roll out <strong>explainable AI</strong> that measurably reduces abandonment.</li>
+<li>Revenue stays modest by design until AI lands; success is judged on <strong>stickiness</strong>, then <strong>differentiated outcomes</strong>.</li>
+</ul>
+<h1 id="code-block-showcase">Code Block Showcase<a hidden class="anchor" aria-hidden="true" href="#code-block-showcase">#</a></h1>
+<p>Below are common languages + edge cases to test your renderer.<br>
+Inline code like <code>const x = 1</code> and <code>print(&quot;hi&quot;)</code> should look distinct.</p>
+<hr>
+<h2 id="javascript">JavaScript<a hidden class="anchor" aria-hidden="true" href="#javascript">#</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// throttle util
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">throttle</span>(<span style="color:#a6e22e">fn</span>, <span style="color:#a6e22e">wait</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">last</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">timer</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (...<span style="color:#a6e22e">args</span>) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">now</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">remaining</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">wait</span> <span style="color:#f92672">-</span> (<span style="color:#a6e22e">now</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">last</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">remaining</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">last</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">now</span>; <span style="color:#a6e22e">fn</span>(...<span style="color:#a6e22e">args</span>);
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">clearTimeout</span>(<span style="color:#a6e22e">timer</span>);
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">timer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">setTimeout</span>(() =&gt; { <span style="color:#a6e22e">last</span> <span style="color:#f92672">=</span> Date.<span style="color:#a6e22e">now</span>(); <span style="color:#a6e22e">fn</span>(...<span style="color:#a6e22e">args</span>); }, <span style="color:#a6e22e">remaining</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><img alt="Alt text" loading="lazy" src="https://mirrors.creativecommons.org/presskit/logos/cc.logo.svg"></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/hello-world/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Hello World</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">ross.</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

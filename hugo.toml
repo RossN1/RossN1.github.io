@@ -1,0 +1,26 @@
+baseURL = "https://RossN1.github.io"
+languageCode = "en-gb"
+title = "ross."
+theme = "PaperMod"
+
+# Recommended PaperMod params
+[params]
+  defaultTheme = "auto"        # auto-switches light/dark
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowShareButtons = false
+  ShowCodeCopyButtons = true
+  disableSpecial1stPost = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
