@@ -15,6 +15,9 @@ canonifyURLs = true
   ShowCodeCopyButtons = true
   disableSpecial1stPost = true
 
+[params.assets]
+  disableFingerprinting = true          # disables hashed filenames + SRI
+
 [menu]
   [[menu.main]]
     identifier = "posts"
