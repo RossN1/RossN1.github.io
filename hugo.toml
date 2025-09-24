@@ -1,8 +1,9 @@
-baseURL = "https://rossn1.github.io"
+baseURL = "https://rossn1.github.io/"
 publishDir = "docs"
 languageCode = "en-gb"
 title = "ross."
 theme = "PaperMod"
+canonifyURLs = true
 
 # Recommended PaperMod params
 [params]
