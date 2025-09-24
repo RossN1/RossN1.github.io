@@ -1,4 +1,5 @@
 baseURL = "https://rossn1.github.io"
+publishDir = "docs"
 languageCode = "en-gb"
 title = "ross."
 theme = "PaperMod"
