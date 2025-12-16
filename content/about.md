@@ -7,6 +7,6 @@ ShowReadingTime: false
 
 Hi, I’m **Ross.** 👋
 
-I'm an MSc Data Science graduate with an interest in artificial inteligence, machine learning, data analytics and software development.   
+I'm an MSc Data Science graduate with an interest in artificial intelligence, machine learning, data analytics and software development.   
 
 This blog is where I share notes, tutorials, and experiments.
