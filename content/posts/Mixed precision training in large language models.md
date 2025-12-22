@@ -5,8 +5,6 @@ draft: false
 ShowReadingTime: true
 ---
 
-# Mixed precision training in large language models
-
 Neural networks have traditionally been trained using 32-bit floating point (FP32). However, the precision FP32 offers isn't always necessary for most training workloads. Lower precision formats can be just as effective, as training is inherently approximate.  
 
 This post covers how I added mixed precision training to an implementation of the transformer architecture following [Umar Jamil's tutorial](https://www.youtube.com/watch?v=ISNdQcPhsts) and what I learned along the way.  
@@ -25,8 +23,11 @@ Initially, a copy of the model's parameters is saved in FP32. During the backpro
 
 
 ### Loss Scaling 
-The value of the loss function is multiplied by a scaling factor before backpropagation. This would shift the values of the gradients into a range that can be represented by FP16, avoiding underflow errors. After backpropagation, the gradients would then be divided by the same factor, before updating weights in FP32.
-<br><br>If the scaling factor is too large, gradients can overflow (become infinity/NaN). In practice, dynamic loss scaling would be used. If overflow is detected, the training step would be skipped and the scale factor would be reduced.
+The value of the loss function is multiplied by a scaling factor before backpropagation. This would shift the values of the gradients into a range that can be represented by FP16, avoiding underflow errors. 
+
+After backpropagation, the gradients would then be divided by the same factor, before updating weights in FP32.
+
+If the scaling factor is too large, gradients can overflow (become infinity/NaN). In practice, dynamic loss scaling would be used. If overflow is detected, the training step would be skipped and the scale factor would be reduced.
 
 
 ## Implementing mixed precision training in PyTorch

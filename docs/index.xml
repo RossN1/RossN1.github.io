@@ -13,8 +13,7 @@
       <link>https://rossn1.github.io/posts/mixed-precision-training-in-large-language-models/</link>
       <pubDate>Tue, 16 Dec 2025 15:40:00 +0000</pubDate>
       <guid>https://rossn1.github.io/posts/mixed-precision-training-in-large-language-models/</guid>
-      <description>&lt;h1 id=&#34;mixed-precision-training-in-large-language-models&#34;&gt;Mixed precision training in large language models&lt;/h1&gt;
-&lt;p&gt;Neural networks have traditionally been trained using 32-bit floating point (FP32). However, the precision FP32 offers isn&amp;rsquo;t always necessary for most training workloads. Lower precision formats can be just as effective, as training is inherently approximate.&lt;/p&gt;
+      <description>&lt;p&gt;Neural networks have traditionally been trained using 32-bit floating point (FP32). However, the precision FP32 offers isn&amp;rsquo;t always necessary for most training workloads. Lower precision formats can be just as effective, as training is inherently approximate.&lt;/p&gt;
 &lt;p&gt;This post covers how I added mixed precision training to an implementation of the transformer architecture following &lt;a href=&#34;https://www.youtube.com/watch?v=ISNdQcPhsts&#34;&gt;Umar Jamil&amp;rsquo;s tutorial&lt;/a&gt; and what I learned along the way.&lt;/p&gt;
 &lt;h2 id=&#34;what-is-mixed-precision-training&#34;&gt;What is mixed precision training?&lt;/h2&gt;
 &lt;p&gt;Mixed precision training is an optimization technique that utilises 16-bit (half precision) for most operations and 32-bit (full precision) for numerically sensitive operations, increasing the speed of model training and reducing memory usage.&lt;/p&gt;</description>
